@@ -31,6 +31,7 @@ resource "azurerm_linux_virtual_machine" "this" {
 
   admin_username      = var.admin_username
   admin_password      = var.admin_password
+  disable_password_authentication = false
 
   os_disk {
     caching              = "ReadWrite"
