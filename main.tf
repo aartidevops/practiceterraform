@@ -25,7 +25,7 @@ module "vm" {
 }
 
 
-module "rg_demo" {
+module "demo" {
   source              = "./modules/resource_group"
   resource_group_name = "demo"
   location            = "eastus"
