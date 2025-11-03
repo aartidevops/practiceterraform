@@ -23,3 +23,10 @@ module "vm" {
   admin_username      = var.admin_username
   admin_password      = var.admin_password
 }
+
+
+module "rg_demo" {
+  source              = "./modules/resource_group"
+  resource_group_name = "demo"
+  location            = "eastus"
+}
