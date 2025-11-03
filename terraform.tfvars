@@ -4,3 +4,7 @@ vnet_name           = "vnet-demo"
 subnet_name         = "subnet-demo"
 address_space       = "10.0.0.0/16"
 subnet_prefix       = "10.0.1.0/24"
+vm_name        = "webserver01"
+admin_username = "Aarti"
+admin_password = "Aarti@431721"
+

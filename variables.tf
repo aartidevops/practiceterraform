@@ -28,3 +28,18 @@ variable "subnet_prefix" {
   type        = string
 }
 
+variable "vm_name" {
+  description = "Name of the virtual machine to be created"
+  type        = string
+}
+
+variable "admin_username" {
+  description = "Admin username for the virtual machine"
+  type        = string
+}
+
+variable "admin_password" {
+  description = "Admin password for the virtual machine"
+  type        = string
+  sensitive   = true
+}
