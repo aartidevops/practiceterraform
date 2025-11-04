@@ -24,7 +24,7 @@ module "vm" {
   admin_password      = var.admin_password
 }
 
-module "vm" {
+module "redis" {
   source              = "./modules/vm"
   vm_name             = "redis"
   location            = var.location
