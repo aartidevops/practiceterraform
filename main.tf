@@ -24,36 +24,36 @@ module "vm" {
   admin_password      = var.admin_password
 }
 
-module "redis" {
-  source              = "./modules/vm"
-  vm_name             = "redis"
-  location            = var.location
-  resource_group_name = module.resource_group.rg_name
-  subnet_id           = module.network.subnet_id
-  admin_username      = var.admin_username
-  admin_password      = var.admin_password
-}
-
-
-module "mongodb" {
-  source              = "./modules/vm"
-  vm_name             = "mongodb"
-  location            = var.location
-  resource_group_name = module.resource_group.rg_name
-  subnet_id           = module.network.subnet_id
-  admin_username      = var.admin_username
-  admin_password      = var.admin_password
-}
-
-module "rabbitmq" {
-  source              = "./modules/vm"
-  vm_name             = "rabbitmq"
-  location            = var.location
-  resource_group_name = module.resource_group.rg_name
-  subnet_id           = module.network.subnet_id
-  admin_username      = var.admin_username
-  admin_password      = var.admin_password
-}
+# module "redis" {
+#   source              = "./modules/vm"
+#   vm_name             = "redis"
+#   location            = var.location
+#   resource_group_name = module.resource_group.rg_name
+#   subnet_id           = module.network.subnet_id
+#   admin_username      = var.admin_username
+#   admin_password      = var.admin_password
+# }
+#
+#
+# module "mongodb" {
+#   source              = "./modules/vm"
+#   vm_name             = "mongodb"
+#   location            = var.location
+#   resource_group_name = module.resource_group.rg_name
+#   subnet_id           = module.network.subnet_id
+#   admin_username      = var.admin_username
+#   admin_password      = var.admin_password
+# }
+#
+# module "rabbitmq" {
+#   source              = "./modules/vm"
+#   vm_name             = "rabbitmq"
+#   location            = var.location
+#   resource_group_name = module.resource_group.rg_name
+#   subnet_id           = module.network.subnet_id
+#   admin_username      = var.admin_username
+#   admin_password      = var.admin_password
+# }
 
 
 
